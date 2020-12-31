@@ -10,7 +10,7 @@
     "lint": "vue-cli-service lint",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "build-storybook-docs": "build-storybook -s public --docs"
+    "build-storybook-docs": "build-storybook --docs -s public"
   },
   "dependencies": {
     "core-js": "^3.6.5",
