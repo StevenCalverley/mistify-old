@@ -12,25 +12,16 @@ export default {
 const Template = (args, { argTypes }) => ({
   props: Object.keys(argTypes),
   components: { MyButton },
-  template: '<my-button @onClick="onClick" v-bind="$props" >Primary</my-button>'
+  template:
+    '<my-button @onClick="onClick" v-bind="$props" >{{ label }}</my-button>'
 });
 
 export const Primary = Template.bind({});
-Primary.args = {};
+Primary.args = {
+  label: "Test"
+};
 
 // export const Secondary = Template.bind({});
 // Secondary.args = {
-//   label: "Button"
-// };
-
-// export const Large = Template.bind({});
-// Large.args = {
-//   size: "large",
-//   label: "Button"
-// };
-
-// export const Small = Template.bind({});
-// Small.args = {
-//   size: "small",
 //   label: "Button"
 // };
